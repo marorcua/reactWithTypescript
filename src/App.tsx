@@ -2,9 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+interface AppProps {
+  header: string
+}
+
+function App({ header }: AppProps) {
   return (
-    <h1>Hello</h1>
+    <h1>{header}</h1>
   );
 }
 
